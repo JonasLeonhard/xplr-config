@@ -68,3 +68,7 @@ require("fzf").setup({
 	recursive = true, -- If true, search all files under $PWD
 	enter_dir = false, -- Enter if the result is directory
 })
+
+-- Config:
+xplr.config.general.panel_ui.default.border_type = "Plain"
+xplr.config.general.panel_ui.default.border_style.fg = { Rgb = { 147, 153, 178 } }
