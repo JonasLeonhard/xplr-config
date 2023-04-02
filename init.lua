@@ -72,3 +72,16 @@ require("fzf").setup({
 -- Config:
 xplr.config.general.panel_ui.default.border_type = "Plain"
 xplr.config.general.panel_ui.default.border_style.fg = { Rgb = { 147, 153, 178 } }
+
+-- Custom Commands: 'open'
+xplr.config.modes.builtin.default.key_bindings.on_key.o = {
+	help = "$open XPLR_FOCUS_PATH",
+	messages = {
+		{
+			BashExecSilently0 = [===[
+        PTH="${XPLR_FOCUS_PATH:?}"
+        open $PTH
+      ]===],
+		},
+	},
+}
