@@ -70,6 +70,8 @@ require("fzf").setup({
 })
 
 -- Config:
+xplr.config.general.show_hidden = true
+
 xplr.config.general.panel_ui.default.border_type = "Plain"
 xplr.config.general.panel_ui.default.border_style.fg = { Rgb = { 147, 153, 178 } }
 
