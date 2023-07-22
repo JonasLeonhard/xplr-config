@@ -19,6 +19,7 @@ require("xpm").setup({
 		"dtomvan/xpm.xplr",
 		"sayanarijit/fzf.xplr",
 		"sayanarijit/tri-pane.xplr",
+		"sayanarijit/type-to-nav.xplr",
 		"sayanarijit/zoxide.xplr",
 		"sayanarijit/trash-cli.xplr",
 		"prncss-xyz/icons.xplr",
@@ -32,6 +33,8 @@ require("xpm").setup({
 	auto_install = true,
 	auto_cleanup = true,
 })
+
+require("type-to-nav").setup()
 
 require("tri-pane").setup({
 	layout_key = "T", -- In switch_layout mode
