@@ -67,7 +67,7 @@ require("fzf").setup({
 	mode = "default",
 	key = "ctrl-f",
 	bin = "fzf",
-	args = "--preview 'pistol {}'",
+	args = "--preview 'cat {}'",
 	recursive = true, -- If true, search all files under $PWD
 	enter_dir = false, -- Enter if the result is directory
 })
